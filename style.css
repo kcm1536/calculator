@@ -1,0 +1,229 @@
+body{
+  width: 100vw;
+  height: 160vw;
+  margin: 0;
+}
+
+button {
+  width: 22vw;
+  height: 22vw;
+  border: none;
+  border-radius: 50%;
+  margin: 1vw 1.5vw;
+  color: white;
+  font-size: 6vw;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.container {
+  background-color: black;
+  display: grid;
+  grid-template-rows: 24vw 24vw 24vw 24vw 24vw 24vw 24vw 24vw 24vw;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  flex-direction: column;
+}
+
+.calc-window {
+  background-color: black;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  padding-right: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.calc-window-display {
+  color: white;
+  font-size: 16vw;
+  margin-top: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.controls {
+  background-color: black;
+  grid-row-start: 4;
+  grid-row-end: 9;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  grid-template-rows: 24vw 24vw 24vw 24vw 24vw;
+}
+
+.button-num {
+  background-color: #333333;
+}
+
+.button-num:active {
+  background-color: #737373;
+}
+
+.button-num-0 {
+  background-color: #333333;
+  width: 47vw;
+  border-radius: 12vw;
+}
+
+.button-num-0:active {
+  background-color: #737373;
+}
+
+.button-method {
+  background-color: #ff9f0a;
+  font-size: 9vw;
+}
+
+.button-method:active {
+  background-color: #fcc78d;
+}
+
+.button-method-selected {
+  background-color: white;
+  color: #ff9f0a;
+}
+
+.button-control {
+  background-color: #a5a5a5;
+  color: black;
+}
+
+.button-control:active {
+  background-color: #d9d9d9;
+}
+
+/*Button placements*/
+.clear {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.negative {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.percent {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.divide {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+
+.num7 {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.num8 {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.num9 {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.times {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+
+.num4 {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.num5 {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.num6 {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.minus {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+
+.num1 {
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.num2 {
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.num3 {
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.add {
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+
+.num0 {
+  grid-row-start: 5;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.decimal {
+  grid-row-start: 5;
+  grid-row-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+
+.calculate {
+  grid-row-start: 5;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
